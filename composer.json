@@ -1,0 +1,13 @@
+{
+    "require": {
+        "codewithkyrian/whisper.php": "^1.1",
+        "ext-json": "*",
+        "ext-ffi": "*",
+        "php": ">=8.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "codewithkyrian/platform-package-installer": true
+        }
+    }
+}
