@@ -8,8 +8,8 @@ WORKDIR /app
 
 COPY composer.json .
 
-RUN composer install -a --no-dev
+RUN composer update -a --no-dev
 
-COPY generate-subtitle.php .
+COPY generate-subtitle .
 
 ENTRYPOINT [ "php", "generate-subtitle.php" ]
