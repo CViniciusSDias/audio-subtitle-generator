@@ -13,7 +13,13 @@ Subtitle generator using Whisper.PHP from an audio input.
 After cloning the repository and running `composer install`, to display the command's usage:
 
 ```shell
-php generate-subtitle.php -h
+php generate-subtitle -h
+```
+
+If you prefer to require this package as a composer dependency, after running `composer require cviniciussdias/audio-subtitle-generator`, to display the command's usage:
+
+```shell
+./vendor/bin/generate-subtitle -h
 ```
 
 ### Options
@@ -32,7 +38,7 @@ php generate-subtitle.php -h
 The following example will generate the subtitle subtitle.srt inside /path based on the audio.mp3 file in the same path:
 
 ```shell
-php generate-subtitle.php \
+php generate-subtitle \
     -f=audio.mp3 \
     --prompt="Initial prompt for context about the audio" \
     --model=small \
