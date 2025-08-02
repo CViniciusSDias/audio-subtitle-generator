@@ -1,6 +1,6 @@
 {
     "name": "cviniciussdias/audio-subtitle-generator",
-    "version": "v0.1.2",
+    "version": "v0.1.4",
     "license": "MIT",
     "type": "library",
     "bin": ["generate-subtitle.php"],
