@@ -35,7 +35,7 @@ If you prefer to require this package as a composer dependency, after running `c
 
 ### Example:
 
-The following example will generate the subtitle subtitle.srt inside /path based on the audio.mp3 file in the same path:
+The following example will generate the subtitle file `subtitle.srt` inside the current directory based on the `audio.mp3` file in the same path:
 
 ```shell
 php generate-subtitle \
@@ -44,7 +44,7 @@ php generate-subtitle \
     --model=small \
     -t8 \
     -l=pt \
-    --output=/app/subtitle.srt
+    --output=subtitle.srt
 ```
 
 ## Docker
