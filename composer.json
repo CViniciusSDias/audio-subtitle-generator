@@ -1,9 +1,12 @@
 {
+    "type": "library",
+    "bin": ["generate-subtitle.php"],
     "require": {
         "codewithkyrian/whisper.php": "^1.1",
         "ext-json": "*",
         "ext-ffi": "*",
-        "php": ">=8.3"
+        "php": ">=8.3",
+        "composer-runtime-api": "^2.2"
     },
     "config": {
         "allow-plugins": {

@@ -1,9 +1,10 @@
+#!/usr/bin/env php
 <?php
 
 use Codewithkyrian\Whisper\{Whisper, WhisperFullParams};
 use function Codewithkyrian\Whisper\{outputSrt, readAudio};
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once $_composer_autoload_path ?? __DIR__ . '/vendor/autoload.php';
 
 $options = getopt(
 	'f::p::m::t::l::o::h',
@@ -43,7 +44,7 @@ function displayHelp(string $script): never
 	$models = implode(', ', Whisper::MODELS);
 
 	echo <<<HELP
-	Usage: php $script [options]
+	Usage: $script [options]
 	
 	Options:
 	 -f, --filepath=<file_path>       \t File path of the audio to be transcribed
@@ -54,7 +55,7 @@ function displayHelp(string $script): never
 	 -o, --output=<output_path>       \t Output path of the subtitle file (.srt extension)
 	
 	Example:
-	php $script -f=audio.mp3 --prompt="Initial prompt for context about the audio" --model=small -t16 -l=pt --output=/full/path/subtitle.srt
+	$script -f=audio.mp3 --prompt="Initial prompt for context about the audio" --model=small -t16 -l=pt --output=/full/path/subtitle.srt
 
 	HELP;
 
