@@ -12,4 +12,4 @@ RUN composer update -a --no-dev
 
 COPY generate-subtitle .
 
-ENTRYPOINT [ "php", "generate-subtitle.php" ]
+ENTRYPOINT [ "php", "generate-subtitle" ]
