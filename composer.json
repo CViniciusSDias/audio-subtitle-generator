@@ -1,4 +1,5 @@
 {
+    "name": "cviniciussdias/audio-subtitle-generator",
     "type": "library",
     "bin": ["generate-subtitle.php"],
     "require": {
